@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Fruitbook</title>
+  </head>
+
+  <body>
+    
+    
+    <header class="hero is-primary">
+      <div class="hero-body">
+        <h1 class="title has-text-centered">Fruitbook</h1>
+      </div>
+    </header>
+
+
+
+  <div class="columns is-variable">
+  
+      <section class="section column is-one-third">
+          <div class="box">
+            <div>
+              <article>
+                <h2 class="title"> Search for a Fruit</h2>
+                  <div class="field">
+                    <form id="fruit-search" class="label is-medium">
+                      <input class="input is-medium" name="fruit" id="fruit" type="text" autofocus="true" placeholder="Enter Fruit Here"/>
+                    </form>
+                  </div>
+                <button id="search" class="button is-medium is-fullwidth is-primary is-outlined"> Search </button>
+              </article>
+            </div>
+          </div>
+      </section>
+
+
+      <article class="section column is-two-thirds">
+            <div class="box card">
+              <div>
+                <div id="current-fruit-container"></div>
+                <h2 class="title"><span id="displayed-fruit" style="text-transform: capitalize"></span></h2>
+                <h3>
+                  <p id="currentFruit" class="card-header-title"></p>
+                </h3>
+                  <p id="displayFruit" class="card-content"></p>
+              </div>
+            </div>
+      </article>
+
+  </div>  
+
+
+  
+      <section class="section column is-two-thirds">
+        <div class="box card">
+          <div>
+            <div id="current-fruit-picture"></div>
+              <p id="diplayFruitPicture" class="card-content"></p>
+          </div>
+        </div>
+      </section>
+
+
+
+  
+  <div class="columns is-variable">
+
+        <section class="section column is-one-third">
+            <div class="box">
+              <div>
+                <h2 class="title">Recent Searches:</h2>
+                <article id="myFruit">
+                </article>
+                <button id="deleteButton" class="button is-medium is-fullwidth is-primary">Remove</button>
+              </div>
+            </div>
+        </section>
+
+      
+        <article class="section tile is-ancestor column is-two-thirds">
+              <div class="box">
+                <div class="tile">
+                  <h2 class="title">Recipes:</h2>
+                </div>
+                  <div class="tile">
+                    <div class="card tile is-child box">
+                      <div id="recipe1" class="card-header-title"></div>
+                      <p id="recipeInfo1" class="card-content"></p>
+                    </div>
+                    <div class="card tile is-child box">
+                      <div id="recipe2" class="card-header-title"></div>
+                      <p id="recipeInfo2" class="card-content"></p>
+                    </div>
+                    <div class="card tile is-child box">
+                      <div id="recipe3" class="card-header-title"></div>
+                      <p id="recipeInfo3" class="card-content"></p>
+                    </div>
+                    <div class="card tile is-child box">
+                      <div id="recipe4" class="card-header-title"></div>
+                      <p id="recipeInfo4" class="card-content"></p>
+                    </div>  
+                    <div class="card tile is-child box">
+                      <div id="recipe5" class="card-header-title"></div>
+                      <p id="recipeInfo5" class="card-content"></p>
+                    </div>    
+                  </div>
+              </div>
+        </article>
+
+  </div>  
+  
+  
+  <footer id="footer" class="footer">
+      <div class="content has-text-centered">
+      <p> &copy; Copyright Fruitbook 2022</p>
+      </div>
+  </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
