@@ -29,7 +29,7 @@ var searchHandler = function(event) {
 
     } else {
         alert("Please enter a fruit");
-    }
+      }
 };
 
 
@@ -226,7 +226,7 @@ var fruitRecipes = function(searchedFruit) {
         if (response.ok) {
             response.json().then(function (data) {
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 8; i++) {
 
         var recipe = document.getElementById(`recipe${i + 1}`)
         recipe.innerHTML = "";
