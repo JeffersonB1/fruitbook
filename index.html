@@ -13,9 +13,24 @@
   <body>
     
     
-    <header class="hero is-primary">
+    <header class="hero is-primary is-small">
       <div class="hero-body">
-        <h1 class="title has-text-centered">Fruitbook</h1>
+        <div class="columns is-gapless">
+          <div class="column is-one-quarter">
+            <!-- <h3>Fruitbook</h3> -->
+            <img src="./assets/images/fruitbook-text-logo.png" alt="fruitbook text logo">
+          </div>
+          <div class="column is-half"></div>
+            <article  class="column is-one-quarter">
+              <h2 class="title"> Search for a Fruit</h2>
+                <div class="field">
+                  <form id="fruit-search" class="label is-medium">
+                    <input class="input is-medium" name="fruit" id="fruit" type="text" autofocus="true" placeholder="Enter Fruit Here"/>
+                  </form>
+                </div>
+              <button id="search" class="button is-medium is-fullwidth is-primary is-outlined"> Search </button>
+            </article>
+      </div>
       </div>
     </header>
 
@@ -23,7 +38,7 @@
 
   <div class="columns is-variable">
   
-      <section class="section column is-one-third">
+      <!-- <section class="section column is-one-third">
           <div class="box">
             <div>
               <article>
@@ -37,27 +52,10 @@
               </article>
             </div>
           </div>
-      </section>
+      </section> -->
 
-
-      <article class="section column is-two-thirds">
-            <div class="box card">
-              <div>
-                <div id="current-fruit-container"></div>
-                <h2 class="title"><span id="displayed-fruit" style="text-transform: capitalize"></span></h2>
-                <h3>
-                  <p id="currentFruit" class="card-header-title"></p>
-                </h3>
-                  <p id="displayFruit" class="card-content"></p>
-              </div>
-            </div>
-      </article>
-
-  </div>  
-
-
-  
-      <section class="section column is-two-thirds">
+    <div>
+      <section class="section column is-three-quarters">
         <div class="box card">
           <div>
             <div id="current-fruit-picture"></div>
@@ -66,25 +64,51 @@
         </div>
       </section>
 
+      <article class="section column is-three-quarters">
+        <div class="box card">
+          <div>
+            <div id="current-fruit-container"></div>
+            <h2 class="title"><span id="displayed-fruit" style="text-transform: capitalize"></span></h2>
+            <h3>
+              <p id="currentFruit" class="card-header-title"></p>
+            </h3>
+              <p id="displayFruit" class="card-content"></p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+      <section class="section column is-one-quarter">
+        <div class="box">
+          <div>
+            <h2 class="title">Recent Searches:</h2>
+            <article id="myFruit">
+            </article>
+            <button id="deleteButton" class="button is-medium is-fullwidth is-primary">Remove</button>
+          </div>
+        </div>
+    </section>
+  </div> 
+
+      
+
+   
 
 
   
-  <div class="columns is-variable">
+      
 
-        <section class="section column is-one-third">
-            <div class="box">
-              <div>
-                <h2 class="title">Recent Searches:</h2>
-                <article id="myFruit">
-                </article>
-                <button id="deleteButton" class="button is-medium is-fullwidth is-primary">Remove</button>
-              </div>
-            </div>
-        </section>
+
+
+  
+  <!-- <div class="columns is-variable"> -->
+
+        
 
       
-        <article class="section tile is-ancestor column is-two-thirds">
-              <div class="box">
+        <article class="tile is-ancestor">
+              <div class="tile is-vertical is-8">
                 <div class="tile">
                   <h2 class="title">Recipes:</h2>
                 </div>
@@ -113,10 +137,10 @@
               </div>
         </article>
 
-  </div>  
+  <!-- </div>   -->
   
   
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer is-large">
       <div class="content has-text-centered">
       <p> &copy; Copyright Fruitbook 2022</p>
       </div>
