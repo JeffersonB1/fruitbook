@@ -254,7 +254,9 @@ var fruitRecipes = function(searchedFruit) {
         recipeIngredients.textContent = "Ingredients:" + " " + data.hits[i + 1].recipe.ingredientLines;
         document.getElementById(`recipeInfo${i + 1}`).appendChild(recipeIngredients);
 
-        var recipeUrl = document.createElement("p")
+        var recipeUrl = document.createElement("a")
+        recipeUrl.setAttribute("href", data.hits[i+1].recipe.url);
+        recipeUrl.setAttribute("target", "_blank");
         recipeUrl.textContent = "Source:" + " " + data.hits[i + 1].recipe.url;
         document.getElementById(`recipeInfo${i + 1}`).appendChild(recipeUrl);
     
