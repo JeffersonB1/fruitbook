@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../images/Fruitbook_background.jpg");
+  background-image: url("../images/Fruitbook_background2.jpg");
 }
 
 .hero {
@@ -16,14 +16,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position: center center; */
-  background-image: url("../images/fruit_background_border_top.jpg");
+  background-image: url("../images/fruit_background_border_top3.jpg");
   
 }
 
 /* .hero-body img {
-  width:20%;
-  height:20%;
+  width:100%;
+  height:100%;
 } */
+
+.hero.is-primary .title {
+  color: #0ba360;
+  text-align: center;
+}
 
 .hero .title {
   font-family: 'Staatliches', sans-serif;
@@ -32,30 +37,37 @@ body {
   text-shadow: -1px 1px 1px rgb(93, 90, 90);
 }
 
+
 .footer {
   /* background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%); */
-  color: white;
-  font-size: large;
+  color: #0ba360;
+  /* padding-bottom: 30px; */
+  font-weight: bold;
+  font-size: 20px;
   box-shadow: -1px 2px 10px 0px rgb(134, 132, 132);
   box-shadow: -1px 2px 10px 0px rgb(134, 132, 132);
   background-attachment: fixed;  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../images/fruit_background_border_top\ -flipped.jpg");
+  background-image: url("../images/fruit_background_border_top4.jpg");
+}
+
+.footer p {
+  padding-top: 45px;
 }
 
 #search {
-  background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
   color: white;
-  border-color: #748bbc;
+  border-color: #0ba360;
 }
 
 #search:hover {
   background-image: none;
-  background-color: #b6d0ea;
+  background-color: #0ba360;
   /* border-color: #83a1d3; */
-  border-color: #83a1d3;
+  border-color: #0ba360;
   /* color: #83a1d3; */
   box-shadow: -1px 2px 5px 0px rgb(134, 132, 132);
 }
@@ -63,13 +75,13 @@ body {
 
 .button.is-primary.is-outlined {
   /* background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%); */
-  color: #748bbc;
-  border-color: #748bbc;
+  color: #0ba360;
+  border-color: #0ba360;
 }
 
 .button.is-primary.is-outlined:hover {
-  background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
-  border-color: #748bbc;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
+  border-color: #0ba360;
 }
 
 
@@ -84,15 +96,15 @@ body {
 
 
 #deleteButton {
-  background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
   color: white;
-  border-color: #748bbc;
+  border-color: #0ba360;
 }
 
 #deleteButton:hover {
   background-image: none;
-  background-color: #b6d0ea;
-  border-color: #83a1d3;
+  background-color: #0ba360;
+  border-color: #0ba360;
   /* color: #83a1d3; */
   box-shadow: -1px 2px 5px 0px rgb(134, 132, 132);
 }

@@ -16,12 +16,12 @@
     <header class="hero is-primary is-small">
       <div class="hero-body">
         <div class="columns is-gapless">
-          <div class="column is-one-quarter">
+          <div class="column is-one-third">
             <!-- <h3>Fruitbook</h3> -->
             <img src="./assets/images/fruitbook-text-logo.png" alt="fruitbook text logo">
           </div>
-          <div class="column is-half"></div>
-            <article  class="column is-one-quarter">
+          <div class="column is-one-third"></div>
+            <article  class="column is-one-third">
               <h2 class="title"> Search for a Fruit</h2>
                 <div class="field">
                   <form id="fruit-search" class="label is-medium">
@@ -30,7 +30,7 @@
                 </div>
               <button id="search" class="button is-medium is-fullwidth is-primary is-outlined"> Search </button>
             </article>
-      </div>
+        </div>
       </div>
     </header>
 
@@ -54,17 +54,40 @@
           </div>
       </section> -->
 
-    <div>
-      <section class="section column is-three-quarters">
+    <!-- <div class="section column is-two-thirds">
+      <section>
+            <div class="box card" id="current-fruit-picture">
+              <p id="diplayFruitPicture" class="card-content"></p>
+            </div>
+      </section> -->
+
+      <div class="section column is-two-thirds">
+        <section class="box card">
+              <div class="card-image" id="current-fruit-picture">
+                <p id="diplayFruitPicture" class="image is-4by3"></p>
+              </div>
+        </section>
+
+
+
+
+
+
+      <!-- <article class="section column is-two-thirds">
         <div class="box card">
           <div>
-            <div id="current-fruit-picture"></div>
-              <p id="diplayFruitPicture" class="card-content"></p>
+            <div id="current-fruit-container"></div>
+            <h2 class="title"><span id="displayed-fruit" style="text-transform: capitalize"></span></h2>
+            <h3>
+              <p id="currentFruit" class="card-header-title"></p>
+            </h3>
+              <p id="displayFruit" class="card-content"></p>
           </div>
         </div>
-      </section>
+      </article> -->
 
-      <article class="section column is-three-quarters">
+
+      <article>
         <div class="box card">
           <div>
             <div id="current-fruit-container"></div>
@@ -77,9 +100,11 @@
         </div>
       </article>
 
+
+
     </div>
 
-      <section class="section column is-one-quarter">
+      <section class="section column is-one-third">
         <div class="box">
           <div>
             <h2 class="title">Recent Searches:</h2>
@@ -88,7 +113,7 @@
             <button id="deleteButton" class="button is-medium is-fullwidth is-primary">Remove</button>
           </div>
         </div>
-    </section>
+      </section>
   </div> 
 
       
