@@ -35,7 +35,6 @@ var searchHandler = function(event) {
 
 
 
-
 var addFruit = function(searchName) {
     currentFruitContainer.textContent = "";
     displayedFruit.textContent = searchName;
@@ -55,8 +54,6 @@ var addFruit = function(searchName) {
 
 
 
-
-
 var findFruitName = function(searchedFruit) {
     var apiFruitName = "https://api.edamam.com/api/nutrition-data?app_id=cd587999&app_key=d7e8f51d5b855c15479cee34dfba35a4&nutrition-type=cooking&ingr=1%20" + searchedFruit;
 
@@ -69,8 +66,6 @@ var findFruitName = function(searchedFruit) {
         }
     })
 };
-
-
 
 
 
@@ -94,8 +89,6 @@ var findPicture = function (searchedFruit) {
         }
     })
 };
-
-
 
 
 
@@ -160,13 +153,11 @@ var findFruitData = function (searchedFruit) {
 
 
 
-
 var saveIntoStorage = function () {
     var savedFruit = JSON.parse(localStorage.getItem("fruits"))  || [];
     savedFruit.push(fruit.value);
     localStorage.setItem("fruits", JSON.stringify(savedFruit));
 };
-
 
 
 
@@ -205,14 +196,12 @@ search.addEventListener("click", function () {
 
 
 
-
 var removeFruit = function () {
     localStorage.removeItem("fruits");
     myFruit.innerHTML = "";
 };
 
 deleteButton.addEventListener("click", removeFruit);
-
 
 
 
@@ -266,5 +255,10 @@ var fruitRecipes = function(searchedFruit) {
     }
 });
 }
+
+fruitSearch.addEventListener("submit", searchHandler);
+search.addEventListener("click", searchHandler);
+
+
 
 
